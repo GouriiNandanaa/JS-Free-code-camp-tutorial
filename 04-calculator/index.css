@@ -1,0 +1,9 @@
+.operand-container{
+    height: 10%;
+}
+
+.operand-container span{
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+}

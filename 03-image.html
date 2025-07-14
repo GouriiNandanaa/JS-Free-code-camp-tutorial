@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Purchase</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        img{
+            width: 40%;
+            margin-bottom: 14px;
+            
+        }
+        body{
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p:nth-child(2){
+            font-size: 22px;
+            margin-bottom: 14px;
+
+        }
+
+        #error{
+            font-size: 36px;
+            margin-bottom: 14px;
+
+        }
+
+        button{
+            border-radius: 36px;
+            font-weight: bold;
+            margin-bottom: 14px;
+
+            width: 30%;
+            padding: 10px 12px;
+            font-size: 22px;
+
+        }
+    </style>
+</head>
+<body>
+    <img src="shoe.jpeg" alt="Nike Shoe">
+
+    <p><strong>Nike Shoes</strong></p>
+    <button onclick="invokeError();">Purchase - $149</button>
+
+    <p id="error"></p>
+    <script>
+        let errorEl = document.getElementById("error");
+
+        function invokeError(){
+            errorEl.textContent = "Something went wrong, please try again"
+        }
+
+    </script>
+</body>
+</html>
