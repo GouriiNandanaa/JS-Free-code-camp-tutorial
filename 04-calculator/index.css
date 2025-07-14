@@ -6,4 +6,10 @@
     display: inline-block;
     height: 20px;
     width: 40px;
+    text-decoration: underline;
+}
+
+button{
+    background: none;
+    padding: 10px 12px;
 }
