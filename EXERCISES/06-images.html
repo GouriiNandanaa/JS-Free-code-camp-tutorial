@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: whitesmoke;
+                text-align: center;
+                color: #130e0f;
+            }
+
+            h1 {
+                font-weight: 200;
+                letter-spacing: 2px;
+            }
+
+            #container {
+                width: 100%;
+            }
+
+            .team-img {
+                width: 100px;
+                border-radius: 100%;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>The Brooklyn Agency</h1>
+        <div id="container">
+            <!-- <img class="team-img" src="images/hip1.jpg">
+            <img class="team-img" src="images/hip2.jpg">
+            <img class="team-img" src="images/hip3.jpg"> -->
+        </div>
+        <script>
+            const imgs = [
+                "images/hip1.jpg",
+                "images/hip2.jpg",
+                "images/hip3.jpg"
+            ]
+
+            const containerEl = document.getElementById("container");
+
+            function renderImages(){
+                for(let i=0; i< imgs.length; i++){
+                    containerEl.innerHTML += `<img src="${imgs[i]}" class="team-img">`;
+                }
+            }
+
+            renderImages();
+        </script>
+    </body>
+</html>
