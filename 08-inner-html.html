@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innner HTML</title>
-</head>
-<body>
+</head> 
+<body>  
     <div id="add-buy"></div>
 
 
     <script>
         let addBuy = document.querySelector("#add-buy");
-        addBuy.innerHTML = `<button>BUY</button>`;
+        addBuy.innerHTML = `<button id="buy-btn">BUY</button>`;
+
+        addBuy.addEventListener("click", function(){
+            addBuy.innerHTML+=`<button id="cancel-btn">CANCEL</button>`;
+
+            let cancelBtn = document.getElementById("cancel-btn");
+
+
+            cancelBtn.addEventListener("click", function(){
+                const children = addBuy.children;
+                console.log(children)
+                addBuy.innerHTML -=`<p>Thanks for buying</p>`;
+            })
+            addBuy.innerHTML+=`<p>Thanks for buying</p>`;
+        })
     </script>
 </body>
 </html>

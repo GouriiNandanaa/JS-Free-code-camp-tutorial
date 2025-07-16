@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>
+</head> 
+<body>  
+    <div id="loc-sto">
+
+    </div>
+
+
+    <script>
+        // let locSto = document.getElementById("loc-sto");
+        
+        // localStorage.setItem("hi","welcome");
+        // console.log(localStorage.getItem("hi"))
+        // localStorage.clear();
+        // console.log(localStorage.getItem("hi"))
+
+
+        var names = ["gouti","nandana"];
+        localStorage.setItem("names",JSON.stringify(names));
+
+        console.log(JSON.parse(localStorage.getItem("names")))
+
+
+    </script>
+
+    <!-- everything that is stored inside the local storage will be strings 
+    so we have to use stringify and parse
+    stringify to convert an aray into sttring
+    parse to change a string into array
+
+
+
+    
+    
+    -->
+
+
+</body>
+</html>
