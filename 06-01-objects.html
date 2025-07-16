@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        /* if 2 or more variables have related vlaues
+        that is like the name and their score, we can use the object datatype
+           
+        */
+        let course = {
+            title: "Learn CSS Grid for free",
+            lessons: 16,
+            creator: "Gouri",
+            length: 45,
+            level: 2,
+            isfree: true,
+            tags: ["html","css"]
+        }
+       console.log(Object.keys(course).length);
+
+
+
+       let castle = {
+            title: "live like a king in my Castle",
+            heading: "Private room in Galway",
+            images: ["img/1.png","img/2.png"],
+            price: 123,
+            isSuperHost: true
+
+       }
+
+       let player = {
+            sayHello : function(){
+                console.log("hey guys")
+            }
+       }   
+
+       player.sayHello();
+    //    functions that are attatched with the objects is methods
+      
+    </script>
+</body>
+</html>

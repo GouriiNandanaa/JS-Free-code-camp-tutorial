@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .green-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="grab-box" style="background-color: green; height: 100px; width: 100%;" class="green-box">Open the box</div>
+
+
+
+    <script>
+        let grabBox = document.querySelector("#grab-box");
+        grabBox.addEventListener("click",function (){
+            console.log("I want to open the box");
+        })
+    </script>
+</body>
+</html>
